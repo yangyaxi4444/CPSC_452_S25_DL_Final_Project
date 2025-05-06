@@ -66,7 +66,7 @@ pip install -r requirements.txt
 * **Radiology embeddings:** precomputed 1024‑dim vectors from a CNN pretrained on CheXpert.
 * **Datasets:**
   * **MIMIC‑IV v2.2** (Structure notes)
-    Johnson et al. (2023), [https://doi.org/10.13026/6mm1-ek67](https://doi.org/10.13026/6mm1-ek67.)
+    Johnson et al. (2023), [https://doi.org/10.13026/6mm1-ek67](https://doi.org/10.13026/6mm1-ek67)
   * **MIMIC‑IV‑Note v2.2** (free‑text clinical notes)
     Johnson et al. (2023), [https://doi.org/10.13026/1n74-ne17](https://doi.org/10.13026/1n74-ne17)
   * **MIMIC‑CXR v2.0.0** (chest x‑ray embeddings)
