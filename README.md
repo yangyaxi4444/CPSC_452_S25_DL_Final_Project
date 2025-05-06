@@ -31,14 +31,12 @@ pip install -r requirements.txt
 ```
 
 ---
-
-## Contents
+## Project Structure
 .
 ├── notebooks/
-│   ├── 1_DataProcess.ipynb       # Data cleaning and feature engineering
-│   └── six_models_wl_visualization.ipynb  # Model training and evaluation
-└── requirements.txt             # Python dependencies
----
+│ ├── 1_DataProcess.ipynb # Data cleaning and feature engineering
+│ └── six_models_wl_visualization.ipynb # Model training and evaluation
+└── requirements.txt # Python dependencies
 
 ## Dependencies
 
