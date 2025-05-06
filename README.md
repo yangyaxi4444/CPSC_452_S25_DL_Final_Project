@@ -36,7 +36,14 @@ pip install -r requirements.txt
 .
 ├── notebooks/
 │ ├── DataProcess.ipynb # Data cleaning and feature engineering
-│ └── six_models_wl_visualization.ipynb # Model training and evaluation
+│ └── six_models_wl_visualization.ipynb # Model training and evaluation, visulization code 
+├── notebook_with_output/
+│ ├── Baseline.pdf # Baseline output 
+│ └── baseline_with_keyword.pdf # Baseline keyword output 
+│ ├── text_structure.pdf # text with strcture output 
+│ └── text_structure_keyword.pdf # text (keyword extraction) with strcture output 
+│ ├── All_three_feature.pdf # All 3 features included 
+│ └── All_three_feature_keyword.pdf # Text (keyword extraction), structure, image
 └── requirements.txt # Python dependencies
 ```
 
