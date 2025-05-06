@@ -82,12 +82,6 @@ pip install -r requirements.txt
 ## Presentation Video
 https://youtu.be/2dA3uehuMHU
 
-## Citation
-
-If you use this code in your work, please cite:
-
-> Yang, A.*, Wu, R.* & Krishnaswamy, S. (2024). Evaluating the Efficacy of Multimodal Models in Clinical Prediction: A Comparative Study of BERT and Multimodal Architectures. *NeurIPS 2024*.
-
 ---
 
 ## Acknowledgments
