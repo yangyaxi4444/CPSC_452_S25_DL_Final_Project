@@ -30,13 +30,15 @@ conda activate clinical_pred
 pip install -r requirements.txt
 ```
 
----
+
 ## Project Structure
+```
 .
 ├── notebooks/
 │ ├── 1_DataProcess.ipynb # Data cleaning and feature engineering
 │ └── six_models_wl_visualization.ipynb # Model training and evaluation
 └── requirements.txt # Python dependencies
+```
 
 ## Dependencies
 
