@@ -2,9 +2,9 @@
 # Evaluating Multimodal Models for In‑Hospital Mortality Prediction
 
 This repository contains the code and data needed to our paper:  
-**“Evaluating the Efficacy of Multimodal Models in Clinical Prediction: A Comparative Study of BERT and Multimodal Architectures.”**
+**“Evaluating the Efficacy of Multimodal Models in Clinical Prediction: A Comparative Study of BERT and Multimodal Architectures”**
 
-We show that a simple TF‑IDF keyword filtering step on clinical notes enables a vanilla BERT model to outperform more complex multimodal fusion architectures on in‑hospital mortality prediction.
+We show that a simple rule-based regular expression keyword filtering step on clinical notes enables a vanilla BERT model to outperform more complex multimodal fusion architectures on in‑hospital mortality prediction.
 
 ---
 
@@ -12,8 +12,8 @@ We show that a simple TF‑IDF keyword filtering step on clinical notes enables 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/clinical-bert-multimodal.git
-cd clinical-bert-multimodal
+git clone https://github.com/yangyaxi4444/CPSC_452_S25_DL_Final_Project
+cd CPSC_452_S25_DL_Final_Project
 ````
 
 ## Prerequisites
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 .
 ├── notebooks/
-│ ├── 1_DataProcess.ipynb # Data cleaning and feature engineering
+│ ├── DataProcess.ipynb # Data cleaning and feature engineering
 │ └── six_models_wl_visualization.ipynb # Model training and evaluation
 └── requirements.txt # Python dependencies
 ```
@@ -58,20 +58,17 @@ pip install -r requirements.txt
 * **Text encoder:** Hugging Face `bert-base-uncased` (or `emilyalsentzer/Bio_ClinicalBERT`).
 * **Radiology embeddings:** precomputed 1024‑dim vectors from a CNN pretrained on CheXpert.
 * **Datasets:**
-
+  * **MIMIC‑IV v2.2** (Structure notes)
+    Johnson et al. (2023), [https://doi.org/10.13026/6mm1-ek67](https://doi.org/10.13026/6mm1-ek67.)
   * **MIMIC‑IV‑Note v2.2** (free‑text clinical notes)
     Johnson et al. (2023), [https://doi.org/10.13026/1n74-ne17](https://doi.org/10.13026/1n74-ne17)
   * **MIMIC‑CXR v2.0.0** (chest x‑ray embeddings)
     Johnson et al. (2019), [https://doi.org/10.13026/C2JT1Q](https://doi.org/10.13026/C2JT1Q)
-
-Scripts to fetch and preprocess these are in `scripts/`.
-
 ---
 
 ## Reproducibility
-
 * We fix random seeds for NumPy and PyTorch.
-* Training, validation splits are stratified on the mortality label (80/20).
+* Training, validation splits are stratified on the mortality label (60/20/20).
 * We apply dynamic threshold calibration to match the positive class prevalence.
 
 ---
