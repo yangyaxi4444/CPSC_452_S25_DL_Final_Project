@@ -72,6 +72,8 @@ pip install -r requirements.txt
 * We apply dynamic threshold calibration to match the positive class prevalence.
 
 ---
+## Presentation Video
+https://youtu.be/2dA3uehuMHU
 
 ## Citation
 
